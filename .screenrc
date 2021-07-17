@@ -1,0 +1,17 @@
+escape ^Tt
+vbell on
+autodetach on
+shell -$SHELL
+startup_message off
+defscrollback 10000
+hardstatus alwayslastline "screen | %`%-w%{=b bw}%n %t%{-}%+w | %u %= %m/%d %c"
+multiuser off
+
+bind p paste .
+
+bind -c REGION 2 split
+bind -c REGION 1 only
+bind -c REGION 0 remove
+bind -c REGION o focus
+bind -c REGION r resize
+bind x command -c REGION
