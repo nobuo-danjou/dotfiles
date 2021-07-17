@@ -4,5 +4,5 @@ for f in .??*
 do
     [ "$f" == ".git" ] && continue
     [ "$f" == ".DS_Store" ] && continue
-    ln -s $DOTPATH/$f $HOME/$f
+    ln -snfv $DOTPATH/$f $HOME/$f
 done
