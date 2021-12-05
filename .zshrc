@@ -27,10 +27,8 @@ PROMPT=$'\n'"%{${fg[blue]}%}%T%{${reset_color}%} %{${fg[green]}%}[%~]%{${reset_c
 #PROMPT=$'\n'"%{${fg[blue]}%}%T%{${reset_color}%}"$'\n'"[${USER}@$hostname] %(!.#.$) "
 #RPROMPT="%{${fg[green]}%}[%~]%{${reset_color}%}"
 
-export EDITOR=vim
-alias cpan=cpanm
+export EDITOR=vi
 alias perldocc='carton exec -- perldoc'
-alias vi=vim
 alias ls='ls -G'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -92,5 +90,5 @@ fi
 PATH="$HOME/.plenv/bin:$PATH"
 if which plenv > /dev/null 2>&1
 then
-    eval "$(plenv init -)"
+    eval "$(plenv init - zsh)"
 fi
