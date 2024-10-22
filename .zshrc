@@ -29,7 +29,12 @@ PROMPT=$'\n'"%{${fg[blue]}%}%T%{${reset_color}%} %{${fg[green]}%}[%~]%{${reset_c
 
 export EDITOR=vi
 alias perldocc='carton exec -- perldoc'
-alias ls='ls -G'
+if [ `uname -o` = "Darwin" ]
+then
+    alias ls='ls -G'
+else
+    alias ls='ls --color'
+fi
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
