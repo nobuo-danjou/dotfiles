@@ -1,3 +1,5 @@
 [user]
 	email = danjou@soffritto.org
 	name = Nobuo Danjou
+[pull]
+	rebase = false

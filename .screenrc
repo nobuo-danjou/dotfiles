@@ -1,7 +1,6 @@
 escape ^Tt
 vbell on
 autodetach on
-shell -$SHELL
 startup_message off
 defscrollback 10000
 hardstatus alwayslastline "screen | %`%-w%{=b bw}%n %t%{-}%+w | %u %= %m/%d %c"
